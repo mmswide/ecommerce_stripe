@@ -24,6 +24,9 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'stripe', '~> 2.8'
 gem 'letter_opener', '~> 1.4', '>= 1.4.1', group: :development
+gem 'activeadmin', '~> 1.0'
+gem 'inherited_resources', '~> 1.7', '>= 1.7.2'
+gem 'devise', git: 'https://github.com/plataformatec/devise.git', branch: 'master'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
