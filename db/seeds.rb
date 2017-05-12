@@ -16,3 +16,13 @@ niceCat = Product.create(
   download_url: "https://s3-us-west-2.amazonaws.com/ecommerce-stripe/kitty.JPG",
   details: "A really nice cat",
   description: %{<p>It's a cat</p>})
+
+niceDog = Product.create(
+  title: "Quality Dog",
+  subtitle: "Learn App Code",
+  image_name: "dog.JPG",
+  price: "4.99",
+  sku: "dogOne",
+  download_url: "https://s3-us-west-2.amazonaws.com/ecommerce-stripe/dog.JPG",
+  details: "A really nice dog",
+  description: %{<p>It's a dog</p>})
