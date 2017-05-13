@@ -10,15 +10,18 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://checkout.stripe.com/checkout.js"></script>
   </head>
 
   <body>
   <div id="content" class="container">
     <header id="content-header">
-      <div id="price-container">
-        <span class="glyphicon glyphicon-tag"></span><span class="price">$4.99</span>
-      </div>
-      <%= image_tag('header-image.jpg', id: "content-head-img", alt: "Header Image") %>
+      <%= link_to products_path do %>
+        <div id="price-container">
+          <span class="glyphicon glyphicon-tag"></span><span class="price">$4.99</span>
+        </div>
+        <%= image_tag('header-image.jpg', id: "content-head-img", alt: "Header Image") %>
+      <% end %>
     </header>
     <%= yield %>
   </div>
