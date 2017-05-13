@@ -7,4 +7,8 @@ class Purchase < ApplicationRecord
   def email_purchaser
     PurchaseMailer.purchase_receipt(self).deliver
   end
+
+  def download_link
+    Product.find(product_id).download_url
+  end
 end
