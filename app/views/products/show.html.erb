@@ -1,7 +1,9 @@
 <section id="content-details" class="row clearfix">
   <article id="details-article" class="col-sm-8">
-    <h1 id="article-title"><%= @product.title %><br/><span class="font-weight-light"><%= @product.subtitle %></span></h1>
+    <h1 id="article-title"><%= @product.title %></h1>
+    <h1 class="font-weight-light"><%= @product.subtitle %></h1>
     <%= raw @product.description %>
+    <img src="<%= asset_path @product.image_name %>" alt="<%= @product.title %>">
   </article>
   <aside id="details-aside" class="col-sm-4">
 
@@ -19,7 +21,7 @@
       <%= hidden_field_tag 'product_id', @product.id%>
       <button id="btn-buy" type="button" class="btn btn-success btn-lg btn-block">
         <span class="glyphicon glyphicon-ok"></span>
-        Buy this!
+        Buy this photo
       </button>
       <script>
         var handler = StripeCheckout.configure({

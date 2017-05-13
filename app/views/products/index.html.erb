@@ -1,6 +1,6 @@
 <section id="content-details" class="row clearfix">
   <article id="details-article" class="col-sm-12">
-    <h1 id="article-title">Look at our animals!</h1>
+    <h1 id="article-title">We sell pictures of animals!</h1>
   </article>
 </section>
 
@@ -10,9 +10,11 @@
       <%= link_to product_path(product) do %>
         <div class="product-image-container">
           <img src="<%= asset_path product.image_name %>" alt="<%= product.title %>">
-          <span class="product-price">$<%= product.price %></span>
         </div>
-        <p class="product-title"><%= product.title %></p>
+        <div class="product-description">
+          <span class="product-price pull-right">$<%= product.price %></span>
+          <p class="product-title"><%= product.title %></p>
+        </div>
       <% end %>
     </div>
   <% end %>
