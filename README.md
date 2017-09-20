@@ -64,5 +64,3 @@ git push heroku master
 * [activeadmin](https://activeadmin.info/) - Administration framework
 
 ## Acknowledgments
-
-* [Learn Ruby on Rails ecommerce website with Stripe Payment Processing](https://www.youtube.com/watch?v=K-l2XhRyVEo)
