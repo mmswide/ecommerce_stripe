@@ -51,6 +51,17 @@ git push heroku master
 heroku open
 ```
 
+Heroku sendgrid
+```
+heroku addons:create sendgrid:starter
+heroku config:get SENDGRID_USERNAME
+appXYZ@heroku.com
+heroku config:get SENDGRID_PASSWORD
+password
+Go https://app.sendgrid.com/settings/api_keys
+heroku config:set SENDGRID_API_KEY=xxxx_api_key_xxxx
+```
+
 To push updates to Heroku:
 
 ```
