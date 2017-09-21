@@ -4,7 +4,7 @@ Project to test out integrating Stripe into Ruby on Rails with email sending and
 
 ## Demo
 
-[https://ecommerce-stripe.herokuapp.com](https://ecommerce-stripe.herokuapp.com)
+[https://commerce-stripe.herokuapp.com/](https://commerce-stripe.herokuapp.com)
 
 ## Getting Started
 
@@ -24,7 +24,7 @@ You will also need a [Stripe](https://stripe.com/) account.
 To get a development environment running:
 
 ```
-git clone https://github.com/tonnamb/ecommerce_stripe.git
+git clone https://github.com/mobileguru121/ecommerce_stripe.git
 cd ecommerce_stripe
 bundle install
 PUBLISHABLE_KEY=pk_test_your_Stripe_publishable_key SECRET_KEY=sk_test_your_Stripe_secret_key rails s
@@ -65,7 +65,7 @@ heroku config:get SENDGRID_USERNAME
 appXYZ@heroku.com
 heroku config:get SENDGRID_PASSWORD
 password
-Go https://app.sendgrid.com/settings/api_keys
+Go [here]https://app.sendgrid.com/settings/api_keys
 heroku config:set SENDGRID_API_KEY=xxxx_api_key_xxxx
 ```
 
