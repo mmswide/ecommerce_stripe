@@ -51,6 +51,13 @@ git push heroku master
 heroku open
 ```
 
+To create db on Heroku
+```
+heroku run rake db:create
+heroku run rake db:migrate
+heroku run rake db:seed
+```
+
 Heroku sendgrid
 ```
 heroku addons:create sendgrid:starter
