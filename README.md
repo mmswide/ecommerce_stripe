@@ -75,6 +75,12 @@ To push updates to Heroku:
 git push heroku master
 ```
 
+Admin
+```
+user_name: admin@example.com
+password: password
+```
+
 ## Built With
 
 * [Rails](http://rubyonrails.org/) - The web framework used
